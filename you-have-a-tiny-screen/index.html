@@ -4,7 +4,7 @@
     <!-- Redirect pc users so the image isn't massive I guess -->
     <script>
       if (screen.width > 699) {
-      document.location = "../";
+        document.location = "../";
       }
     </script>
     <meta charset="utf-8" />
@@ -104,43 +104,45 @@
   </style>
   <body>
     <div id="pain">
-    <h2 class="purple">Sorry about that...</h2>
-    <p>
-      If you're reading this I probably said something
-      <b class="green">stupid</b>, <b class="yellow">awkward</b>, or
-      misunderstood you enough to <b class="blue">desire death</b>. Whatever
-      I've done, know that I'd understand if you chose to hate me for the rest
-      of time, but please allow me to apologize for my existence before I'm
-      disowned.
-    </p>
-    <br />
-    <img
-      src="https://cdn.glitch.global/e09f97b6-8ad8-42a2-bfee-5ae98c2117fe/sorry.gif?v=1666140950284"
-    /><br /><br />
-    <p>
-      I am a <b class="teal">social failure</b>, and this
-      <b class="red">WILL NOT</b> be the last time I disappoint you. I'm deeply
-      sorry for any discomfort my actions or words caused you, and I truly hope
-      you can <b class="purple">forget this interaction</b> as soon as possible.
-      I will understand if you choose to never associate with me again to avoid
-      this kind of embarassment in the future, though if you are masochistic
-      enough to still desire my presence, please
-      <b class="green">gaslight yourself</b> into thinking whatever elicited
-      this link never happened.
-    </p>
-    <h2 class="yellow">I will now temporarily end my own life</h2>
-    <code class="comment"> .seikatsu { confidence: 0%; display: none; } </code>
-    <audio id="depression" loop>
-      <source
-        src="https://cdn.glitch.global/e09f97b6-8ad8-42a2-bfee-5ae98c2117fe/tomomo-theme.mp3?v=1666142771294"
-        type="audio/mpeg"
-      />
-      I've even failed at embeding audio.
-    </audio>
+      <h2 class="purple">Sorry about that...</h2>
+      <p>
+        If you're reading this I probably said something
+        <b class="green">stupid</b>, <b class="yellow">awkward</b>, or
+        misunderstood you enough to <b class="blue">desire death</b>. Whatever
+        I've done, know that I'd understand if you chose to hate me for the rest
+        of time, but please allow me to apologize for my existence before I'm
+        disowned.
+      </p>
+      <br />
+      <img
+        src="https://cdn.glitch.global/e09f97b6-8ad8-42a2-bfee-5ae98c2117fe/sorry.gif?v=1666140950284"
+      /><br /><br />
+      <p>
+        I am a <b class="teal">social failure</b>, and this
+        <b class="red">WILL NOT</b> be the last time I disappoint you. I'm
+        deeply sorry for any discomfort my actions or words caused you, and I
+        truly hope you can <b class="purple">forget this interaction</b> as soon
+        as possible. I will understand if you choose to never associate with me
+        again to avoid this kind of embarassment in the future, though if you
+        are masochistic enough to still desire my presence, please
+        <b class="green">gaslight yourself</b> into thinking whatever elicited
+        this link never happened. Thank you.
+      </p>
+      <h2 class="yellow">I will now temporarily end my own life</h2>
+      <code class="comment">
+        .seikatsu { confidence: 0%; display: none; }
+      </code>
+      <audio id="depression" loop>
+        <source
+          src="https://cdn.glitch.global/e09f97b6-8ad8-42a2-bfee-5ae98c2117fe/tomomo-theme.mp3?v=1666142771294"
+          type="audio/mpeg"
+        />
+        I've even failed at embeding audio.
+      </audio>
     </div>
   </body>
   <script>
-    document.getElementById("pain").onclick = function(){
+    window.onload = (event) => {
       var sadness = document.getElementById("depression");
       sadness.volume = "0.15";
       sadness.play();
